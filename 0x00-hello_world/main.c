@@ -7,5 +7,6 @@
  */
 int main(void)
 {
+	printf("Hello world project");
 	return (0);
 }
