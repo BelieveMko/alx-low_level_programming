@@ -1,7 +1,7 @@
-#include <stdio.h>
+i#include <stdio.h>
 
 /**
-  *main - prints lower case in reverse
+  *main - prints all lower case in reverse
   *Return: - return 0
   */
 
