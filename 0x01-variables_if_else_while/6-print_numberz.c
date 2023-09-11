@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  *main - prints base 10 numbers using putchar
+  *main - prints all base 10 numbers using putchar
   *Return: - Return 0
   */
 
