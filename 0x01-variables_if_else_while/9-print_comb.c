@@ -9,13 +9,10 @@ int main(void)
 
 {
 	char i = 0;
-	char conv;
-
+	
 	while (i <= 9)
 	{
-
-	conv = '0' + i;
-	putchar(conv);
+	putchar('0' + i);
 
 	if (i < 9)
 	{
