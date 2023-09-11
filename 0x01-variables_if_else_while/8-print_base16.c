@@ -13,7 +13,7 @@ int main(void)
 
 	while (x <= 9)
 	{
-	conv = '0' + x;	
+	conv = '0' + x;
 	putchar(conv);
 	x++;
 	}
