@@ -8,14 +8,14 @@
 int main(void)
 {
 	int i = 0;
-	char conv;
 
 	while (i <= 9)
 
 	{
-	conv = '0' + i;
-	putchar(conv);
+
+	putchar(i + '0');
 	i++;
+
 	}
 
 	putchar(10);
