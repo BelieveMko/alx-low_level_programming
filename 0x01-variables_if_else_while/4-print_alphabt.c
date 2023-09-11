@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  *main - prints the last digit of the number stored in the variable n
+  *main - prints the letters in lowercase except for e and q
   *Return: - Returns 0
   */
 
