@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  *main - prints lower case in reverse
+  *main - prints numbers and base 16 letters
   *Return: - return 0
   */
 
