@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  *main - this prints lower case 
+  *main - this prints lower case.
   *Return: - Returns 0
   */
 
