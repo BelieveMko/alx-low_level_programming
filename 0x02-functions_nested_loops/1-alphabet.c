@@ -1,4 +1,4 @@
-
+char _putchar(char letter);
 /**
  * print_alphabet - print all alphabet in lowercase
  */
