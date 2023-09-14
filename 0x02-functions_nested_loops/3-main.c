@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
    * main - check the code.
     *
@@ -8,7 +8,8 @@
 int main(void)
 {
 	    int r;
-
+_putchar(10);
+_putchar('\n');
 	        r = _islower('H');
 		    _putchar(r + '0');
 		        r = _islower('o');
