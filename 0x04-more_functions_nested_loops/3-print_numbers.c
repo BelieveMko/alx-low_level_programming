@@ -5,13 +5,11 @@
 
 void print_numbers(void)
 {
-	int c = 0;
-	char x;
+	int c = 48;
 
-	while (c < 9)
+	while (c <= 57)
 	{
-		x = c + '0';
-		_putchar(x);
+		_putchar(c);
 		c++;
 	}
 _putchar(10);
