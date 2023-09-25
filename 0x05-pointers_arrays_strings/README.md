@@ -1,0 +1,2 @@
+first tasks for pointers
+
