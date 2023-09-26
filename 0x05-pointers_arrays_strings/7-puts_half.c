@@ -2,10 +2,11 @@
 /**
  * puts_half - a function that prints half of a string
  * if odd len, n = (length_of_the_string - 1) / 2
- * @str: input
- * Return: half of input
+ * @str: variable
+ * Return: half of chars
  */
 void puts_half(char *str)
+
 {
 	int i, n, m, p;
 
@@ -36,7 +37,7 @@ void puts_half(char *str)
 
 	}
 
-	}
+
 	_putchar('\n');
 
 return (0);
