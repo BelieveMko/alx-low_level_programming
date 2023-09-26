@@ -5,40 +5,23 @@
  * @str: variable
  * Return: half of chars
  */
-void puts_half(char *str)
 
+void puts_half(char *str)
 {
-	int i, n, m, p;
+	int a, b, i;
 
 	i = 0;
 
-	while (*str != '\0')
-	{
-	i++;
-	str++;
-	}
+	for (a = 0; str[a] != '\0'; a++)
+		i++;
+	b = (i / 2);
 
-	n = i + 1;
-	m = n / 2;
+	if ((i % 2) == 1)
+		b = ((i + 1) / 2);
 
-	if (p == 0)
-	{
-	str = &str[5];
-		while (*str != '\0')
-		{
-			_putchar(*str);
-			str++;
-		}
-
-	}
-
-	else if
-	{
-
-	}
-
-
-	_putchar('\n');
+	for (a = b; str[a] != '\0'; a++)
+		_putchar(str[a]);
+		_putchar('\n');
 
 return (0);
 }
