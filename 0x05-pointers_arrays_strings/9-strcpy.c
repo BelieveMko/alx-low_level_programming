@@ -4,7 +4,7 @@
  * char *_strcpy - a function that copies the string pointed to by src
  * @dest: string copy to
  * @src: srting copy from
- * Return: - dest 
+ * Return: - dest
  */
 char *_strcpy(char *dest, char *src)
 {
