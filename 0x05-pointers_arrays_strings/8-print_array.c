@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 	{
 	if (p == m)
 	{
-	printf("%d" , *a);
+	printf("%d", *a);
 	}
 
 	else
@@ -26,4 +26,5 @@ void print_array(int *a, int n)
 	p++;
 	a++;
 	}
+printf("\n");
 }
