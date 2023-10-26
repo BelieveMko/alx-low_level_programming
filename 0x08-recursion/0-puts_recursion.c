@@ -11,10 +11,10 @@ void _puts_recursion(char *s)
 
 	{
 	_putchar(10);
-
 	}
 
 	else
+	
 	{
 	_putchar(*s);
 	s++;
