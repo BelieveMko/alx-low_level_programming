@@ -1,141 +1,89 @@
-#include <stdio.h>
-		
 #include "main.h"
-		
 
-		
 /**
-		
- * _atoi - converts a string to an integer
-		
- * @s: string to be converted
-		
- *
-		
- * Return: the int converted from the string
-		
- */
-		
-int _atoi(char *s)
-		
-{
-		
-	int i, d, n, len, f, digit;
-		
+  * main - multiply arguments supplied to the command line
+  * @argc: number of arguments
+  * @argv: array of arguments
+  *
+  * Return: return 0
+  */
 
-		
-	i = 0;
-		
-	d = 0;
-		
-	n = 0;
-len = 0;
-		
-	f = 0;
-		
-	digit = 0;
-		
 
-		
-	while (s[len] != '\0')
-		
-		len++;
-		
 
-		
-	while (i < len && f == 0)
-		
-	{
-		
-		if (s[i] == '-')
-		
-			++d;
-		
-
-		
-		if (s[i] >= '0' && s[i] <= '9')
-{
-		
-			digit = s[i] - '0';
-		
-			if (d % 2)
-		
-				digit = -digit;
-		
-			n = n * 10 + digit;
-		
-			f = 1;
-		
-			if (s[i + 1] < '0' || s[i + 1] > '9')
-		
-				break;
-		
-			f = 0;
-		
-		}
-		
-		i++;
-		
-	}
-		
-
-		
-	if (f == 0)
-		
-		return (0);
-	return (n);
-		
-}
-		
-
-		
-/**
-		
- * main - multiplies two numbers
-		
- * @argc: number of arguments
-		
- * @argv: array of arguments
-		
- *
-		
- * Return: 0 (Success), 1 (Error)
-		
- */
-		
 int main(int argc, char *argv[])
-		
+
 {
-		
-	int result, num1, num2;
-		
+	int mul;
+	int a;
+	int b;
 
-		
-	if (argc < 3 || argc > 3)
-		
+	if (argc < 3)
+
 	{
-		
-		printf("Error\n");
-		
-		return (1);
-		
+		printf("Error");
+
 	}
-		
 
-		
-	num1 = _atoi(argv[1]);
-		
-	num2 = _atoi(argv[2]);
-		
-	result = num1 * num2;
-		
+	else
 
-		
-	printf("%d\n", result);
-		
+	{
+	a = _atoi(argv[1]);
+	b = _atoi(argv[2]);
 
-		
-	return (0);
-		
+	mul = a * b;
+
+	printf("%d", mul);
+
+	}
+
+return (0);
 }
 
+/**
+  * _atoi  :- changes a char to an int
+  * @s     :- pointer to first char
+  *
+  * Return:- integer value after conversion
+  */
+
+
+int _atoi(char *s)
+
+{
+
+
+	int i = 0;
+	int d = 0;
+	int p = 0;
+	int c = 1;
+	int ch;
+	int sign = 1;
+
+	if (*s == '-')
+	{
+		sign = -1;
+		s++;
+	}
+	while (*s != '\0')
+
+	{
+		i++;
+		s++;
+	}
+
+	s--;
+
+	while (d < i)
+	{
+
+		ch = *s - '0';
+
+		p = p + ch * c;
+		c = c * 10;
+		s--;
+		d++;
+
+	}
+
+return (p * sign);
+}
