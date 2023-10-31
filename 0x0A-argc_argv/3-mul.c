@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	if (argc < 3)
 
 	{
-		printf("Error");
+		printf("Error\n");
 
 	}
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
 	mul = a * b;
 
-	printf("%d", mul);
+	printf("%d\n", mul);
 
 	}
 
