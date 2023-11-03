@@ -29,7 +29,7 @@ char *_strdup(char *str)
 
 	g = l + 1;
 
-	cpystr = malloc(sizeof(char) * g);
+	cpystr = malloc(sizeof(*s) * g);
 
 	if (cpystr == NULL)
 	{
