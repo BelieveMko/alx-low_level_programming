@@ -29,7 +29,7 @@ char *_strdup(char *str)
 
 	g = l + 1;
 
-	cpystr = malloc(sizeof(*str) * g);
+	cpystr = malloc(sizeof(char) * g);
 
 	if (cpystr == NULL)
 	{
@@ -44,7 +44,6 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	i = i + 1;
 
 	cpystr[i] = '\0';
 
