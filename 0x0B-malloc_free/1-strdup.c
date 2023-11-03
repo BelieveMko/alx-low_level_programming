@@ -34,7 +34,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (i < l)
+	while (i < (l - 1))
 	{
 		cpystr[i] = str[i];
 		i++;
