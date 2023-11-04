@@ -2,16 +2,23 @@
 #include <stdlib.h>
 
 /**
- * free_grid - free up a 2d grid
- * @grid: double pointer 2d grid
- * @height: height of grid
+ * free_grid:- free up  2D grid previously created
+ *
+ * @grid:- double pointer 2D grid
+ * @height:- height of the grid
  */
 
 void free_grid(int **grid, int height)
 {
-	int i;
+	int idx = 0;
 
-	for (i = 0; i < height; i++)
-		free(grid[i]);
+	while (idx < height)
+	{
+
+		free(grid[idx]);
+		idx++;
+
+	}
+
 	free(grid);
 }
