@@ -1,22 +1,13 @@
 #include "main.h"
 
 /**
- * get_bit - A function that gets a bit at index
- * @n: The number to get bit from
- * @index: The index where the bit get at
- * Return: The value of the bit or -1 if an error occured
+ * print_binary - Prints the binary representation of a number.
+ * @n: The number to be printed in binary form.
  */
 
-int get_bit(unsigned long int n, unsigned int index)
+void print_binary(unsigned long int n)
 {
-	unsigned long int max = 0x01;
-
-	max <<= index;
-	if (max == 0)
-		return (-1);
-
-	if ((n & max))
-		return (1);
-	else
-		return (0);
+	if (n > 1)
+		print_binary(n >> 1);
+	_putchar((n & 1) + '0');
 }
