@@ -9,7 +9,7 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int coverted = 1;
+	unsigned long int converted = 1;
 
 	converted = converted << index;
 	if (converted == 0)
